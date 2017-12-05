@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+        <input type="number" class="form-control" id="amount" placeholder="Enter Amount" name="amount">
+        <input type="number" class="form-control" id="rate" placeholder="Enter Rate" name="rate">
+        <input type="number" class="form-control" id="dc" placeholder="Enter Delivery Charge" name="dc">
+        <button type="submit" class="btn btn-default" onclick="init()">Submit</button>
+    </div>
+    </div>
+          
+
+  
+
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Ltr</th>
+                        <th>Amount</th>
+                        <th>Delivery Charge</th>
+                        <th>GST</th>
+                        <th>Total</th>
+                    </tr>
+
+                    <tr>
+                        <td id="l"></td>
+                        <td id="a"></td>
+                        <td id="r"></td>
+                        <td id="d"></td>
+                        <td id="total"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+
+    <script src="js/main.js"></script>
+    <script>
+    document.onkeypress=function(){
+    if(window.event.keyCode==13){
+        init();
+    }
+    }
+    </script>
+</body>
+</html>
